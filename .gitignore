@@ -1,3 +1,9 @@
+# Assets
+assets/images/*
+!assets/images/.gitkeep
+assets/audio/*
+!assets/audio/.gitkeep
+
 # Miscellaneous
 *.class
 *.log

@@ -27,7 +27,7 @@ class MyDrawer extends StatelessWidget {
             child: ListTile(
               title: Text("HOME"),
               leading: Icon(Icons.home),
-              onTap: () {},
+              onTap: () => Navigator.pop(context),
             ),
           ),
 
