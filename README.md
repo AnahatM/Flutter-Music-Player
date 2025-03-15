@@ -4,6 +4,9 @@ A modern music player mobile app made using Flutter, featuring a minimalist, neu
 Features include selecting songs from playlists, and audio playback controls for play, pause, skip next, or skip to previous.
 You can also drag the progress bar to seek to a specific point in the song. The app can switch between light and dark mode in the settings page.
 
+![Flutter](https://img.shields.io/badge/-Flutter-05122A?style=flat-square&logo=Flutter&color=2a2e34) 
+![Dart](https://img.shields.io/badge/-Dart-05122A?style=flat-square&logo=Dart&color=2a2e34)
+
 <img src="images/MusicApp.png" alt="Minimalist Music Player" width="650px">
 
 ## Flutter Guide
