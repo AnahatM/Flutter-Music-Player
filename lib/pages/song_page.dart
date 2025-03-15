@@ -157,7 +157,10 @@ class SongPage extends StatelessWidget {
                         child: GestureDetector(
                           onTap: value.playPreviousSong,
                           child: NeuromorphicBox(
-                            child: Icon(Icons.skip_previous),
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Icon(Icons.skip_previous),
+                            ),
                           ),
                         ),
                       ),
@@ -170,8 +173,13 @@ class SongPage extends StatelessWidget {
                         child: GestureDetector(
                           onTap: value.pauseOrResume,
                           child: NeuromorphicBox(
-                            child: Icon(
-                              value.isPlaying ? Icons.pause : Icons.play_arrow,
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Icon(
+                                value.isPlaying
+                                    ? Icons.pause
+                                    : Icons.play_arrow,
+                              ),
                             ),
                           ),
                         ),
@@ -183,7 +191,12 @@ class SongPage extends StatelessWidget {
                       Expanded(
                         child: GestureDetector(
                           onTap: value.playNextSong,
-                          child: NeuromorphicBox(child: Icon(Icons.skip_next)),
+                          child: NeuromorphicBox(
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Icon(Icons.skip_next),
+                            ),
+                          ),
                         ),
                       ),
                     ],

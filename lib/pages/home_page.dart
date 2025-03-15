@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:minimalist_music_player/components/my_drawer.dart';
+import 'package:minimalist_music_player/components/neuromorphic_song_tile.dart';
 import 'package:minimalist_music_player/models/playlist_provider.dart';
 import 'package:minimalist_music_player/models/song.dart';
 import 'package:minimalist_music_player/pages/song_page.dart';
@@ -55,11 +56,19 @@ class _HomePageState extends State<HomePage> {
               final Song song = playlist[index];
 
               // Return ListTile
-              return ListTile(
-                title: Text(song.songName),
-                subtitle: Text(song.artistName),
-                leading: Image.asset(song.albumImagePath),
-                onTap: () => goToSong(index),
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: NeuromorphicSongTile(
+                  child: ListTile(
+                    title: Text(song.songName),
+                    subtitle: Text(song.artistName),
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(song.albumImagePath),
+                    ),
+                    onTap: () => goToSong(index),
+                  ),
+                ),
               );
             },
           );
