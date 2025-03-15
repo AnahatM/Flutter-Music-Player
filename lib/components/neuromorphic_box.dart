@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:minimalist_music_player/themes/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class NeuromorphicBox extends StatelessWidget {
   final Widget? child;
@@ -7,6 +9,11 @@ class NeuromorphicBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Check dark mode
+    bool isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
+    Color darkShadow = isDarkMode ? Colors.black : Colors.grey.shade500;
+    Color lightShadow = isDarkMode ? Colors.grey.shade900 : Colors.white;
+
     return Container(
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surface,
@@ -14,13 +21,13 @@ class NeuromorphicBox extends StatelessWidget {
         boxShadow: [
           // Dark shadow on bottom-right
           BoxShadow(
-            color: Colors.grey.shade500,
+            color: darkShadow,
             offset: const Offset(4.0, 4.0),
             blurRadius: 15,
           ),
           // Light shadow on top-left
           BoxShadow(
-            color: Colors.white,
+            color: lightShadow,
             offset: const Offset(-4.0, -4.0),
             blurRadius: 15,
           ),
