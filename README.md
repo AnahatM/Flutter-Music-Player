@@ -7,9 +7,11 @@ You can also drag the progress bar to seek to a specific point in the song. The 
 ![Flutter](https://img.shields.io/badge/-Flutter-05122A?style=flat-square&logo=Flutter&color=2a2e34)
 ![Dart](https://img.shields.io/badge/-Dart-05122A?style=flat-square&logo=Dart&color=2a2e34)
 
-<img src="images/MusicAppLightMode.png" alt="Minimalist Music Player" width="650px">
-<img src="images/MusicAppDarkMode.png" alt="Minimalist Music Player" width="650px">
-<img src="images/MusicApp.png" alt="Minimalist Music Player" width="650px">
+## 📱 Screenshots
+
+| <img src="images/MusicAppLightMode.png" alt="Minimalist Music Player - Light Mode" width="300px"> | <img src="images/MusicAppDarkMode.png" alt="Minimalist Music Player - Dark Mode" width="300px"> |
+| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+| <img src="images/MusicApp.png" alt="Minimalist Music Player - Full View" width="300px"> |
 
 ## Flutter Guide
 
