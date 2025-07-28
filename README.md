@@ -25,7 +25,7 @@ You can also drag the progress bar to seek to a specific point in the song. The 
 | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | <img src="images/MusicApp.png" alt="Minimalist Music Player - Full View" width="300px"> |
 
-## Flutter Guide
+## ℹ️ Flutter Guide
 
 A few resources to get you started:
 
